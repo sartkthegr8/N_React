@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <title>day 1</title>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!-- <script >
+            const head=document.createElement("h1");
+            head.innerHTML="hello JS bhai";
+
+            const rout=document.getElementById("root");
+            rout.appendChild(head);
+        </script> -->
+
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>    
+        
+        <script>
+            const head=React.createElement("h1", {}, "hello react bhai!");
+            
+            const rout=ReactDOM.createRoot(document.getElementById("root"));
+        
+            rout.render(head);
+
+
+        </script>        
+    
+    </body>
+</html>
